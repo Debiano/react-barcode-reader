@@ -7,7 +7,7 @@ const babel = require('gulp-babel')
 const babelOptions = JSON.parse(fs.readFileSync('./.babelrc', 'utf8'))
 
 const paths = {
-  scripts: [ 'src/index.js'],
+  scripts: [ 'src/index.js', 'src/BarcodeScanner.js', 'src/useBarcodeScanner.js' ],
   destination: './lib',
 }
 

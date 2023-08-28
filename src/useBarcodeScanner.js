@@ -202,7 +202,7 @@ useBarcodeScanner.propTypes = {
     onScanButtonLongPressed: PropTypes.func, // Callback after detection of a successfull scan while the scan button was pressed and held down
     stopPropagation: PropTypes.bool, // Stop immediate propagation on keypress event
     preventDefault: PropTypes.bool, // Prevent default action on keypress event
-    testCode: PropTypes.string // Test string for simulating
+    testCode: PropTypes.string, // Test string for simulating
     preventScanOnInput: PropTypes.bool, // Prevents input from being read at the input, text area, and other editable areas.
 };
 
