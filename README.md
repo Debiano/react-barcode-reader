@@ -1,7 +1,7 @@
 [![npm version](https://badge.fury.io/js/react-barcode-reader.svg)](https://badge.fury.io/js/react-barcode-reader)
 
 ## Introduction
-A [React](https://facebook.github.io/react/) component for reading barcode an QR codes from devices that are represent as keyboard to the system.
+A [React](https://facebook.github.io/react/) component for reading barcode and QR codes from devices that are represent as keyboard to the system.
 
 ## Demo
 [kybarg.github.io/react-barcode-reader/](https://kybarg.github.io/react-barcode-reader/)
@@ -52,7 +52,7 @@ class Test extends Component {
 |---|---|---|---|
 | onScan | func |  | Callback after detection of a successfull scanning (scanned string in parameter) |
 | onError | func |  | Callback after detection of a unsuccessfull scanning (scanned string in parameter) |
-| HonReceive | func |  | Callback after receiving and processing a char (scanned char in parameter)
+| onReceive | func |  | Callback after receiving and processing a char (scanned char in parameter)
 | onKeyDetect | func |  | Callback after detecting a keyDown (key char in parameter) - in contrast to onReceive, this fires for non-character keys like tab, arrows, etc. too!
 | timeBeforeScanTest | number | 100 | Wait duration (ms) after keypress event to check if scanning is finished
 | avgTimeByChar | number | 30 | Average time (ms) between 2 chars. Used to do difference between keyboard typing and scanning
@@ -65,6 +65,7 @@ class Test extends Component {
 | stopPropagation | bool | false | Stop immediate propagation on keypress event
 | preventDefault | bool | false | Prevent default action on keypress event
 | testCode | string |  | Test string for simulating
+| preventScanOnInput | bool | true | Prevents input from being read at the input, textarea, and other editable areas.
 
 ## Dev
 
